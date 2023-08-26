@@ -1,0 +1,5 @@
+# Project exclude paths
+/DesignPatterns/target/
+/juc/target/
+/kafka/target/
+/redis/target/

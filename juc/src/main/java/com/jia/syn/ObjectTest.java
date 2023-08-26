@@ -12,9 +12,14 @@ public class ObjectTest {
 //        System.out.println(VM.current().details());
         //        System.out.println(VM.current().objectAlignment());
         Object obj = new Object();
-        System.out.println(Integer.toHexString(obj.hashCode()));
-        System.out.println(ClassLayout.parseInstance(obj).toPrintable());
+//        System.out.println(Integer.toHexString(obj.hashCode()));
+//        System.out.println(ClassLayout.parseInstance(obj).toPrintable());
 
+        new Thread(()->{
+            synchronized (obj) {
+                System.out.println(ClassLayout.parseInstance(obj).toPrintable());
+            }
+        }).start();
     }
 
 }

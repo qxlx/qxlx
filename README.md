@@ -1,5 +1,7 @@
 ###  👋
-后端工程师
+
+21届本，后端工程师
+语言技术栈（Java、Go）
 
 ![madneal's github stats](https://github-readme-stats.vercel.app/api?username=qxlx&show_icons=true&theme=radical) 
 

@@ -1,6 +1,8 @@
 package com.jia.future;
 
 
+import java.util.concurrent.CompletableFuture;
+
 /**
  * @author jiabaobao
  * @date 2023/8/13 6:20 PM
@@ -8,11 +10,11 @@ package com.jia.future;
 public class CompletableFutureDemo2 {
 
     public static void main(String[] args) {
-//        CompletableFuture<java.lang.String> completableFuture = CompletableFuture.supplyAsync(() -> {
-//            return "helloword";
-//        }).thenApply(s -> s + "qq");
-//
-//        System.out.println(completableFuture.join());
+        CompletableFuture<String> completableFuture = CompletableFuture.supplyAsync(() -> {
+            return "helloword";
+        }).thenApply(s -> s + "qq");
+
+        System.out.println(completableFuture.join());
 
         int x  = 10;
         int y = 20;

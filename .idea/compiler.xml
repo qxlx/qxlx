@@ -14,8 +14,5 @@
         <module name="kafka" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="designpatterns-beauty" target="8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

@@ -2,7 +2,7 @@
 
 21届本，后端工程师
 语言技术栈（Java、Go）<br/>
-基础学科、编程语言、框架、中间件、软件设计、分布式系统设计、微服务、DDD、云原生、自动化运维、大数据、区块链、机器学习、人工智能 （学习路径 ⭐️）
+基础学科、编程语言、框架、中间件、软件设计、分布式系统设计、性能优化、源码解析、微服务、DDD、云原生、自动化运维、大数据、区块链、机器学习、人工智能 （学习路径 ⭐️）
 
 ![madneal's github stats](https://github-readme-stats.vercel.app/api?username=qxlx&show_icons=true&theme=radical) 
 

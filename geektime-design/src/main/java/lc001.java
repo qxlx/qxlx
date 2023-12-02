@@ -23,4 +23,22 @@ public class lc001 {
         return new int []{};
     }
 
+//    public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+//        int m = word1.length;
+//        int n = word2.length;
+//        int i = 0, j = 0, p = 0, q = 0;
+//        while (i < m && j < n) {
+//            if (word1[i].charAt(p++) != word2[j].charAt()[q++]) return false;
+//            if (p == word1[i].length()) { //一个字符串结束
+//                i++;
+//                p = 0;
+//            }
+////            if (q == word2[i].length) {
+////                j++;
+////                q = 0;
+////            }
+//        }
+//        return i == m && j == n; //遍历到最后了
+//    }
+
 }

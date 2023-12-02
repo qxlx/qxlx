@@ -7,11 +7,15 @@ package com.qxlx.behavioral.strategy;
 public class Test {
 
     public static void main(String[] args) {
-        FundsContext fundsContext = new FundsContext();
+//        FundsContext fundsContext = new FundsContext();
+//
+//        fundsContext.setAbstractFundsStrategy(new GansuBkFundsStrategy());
+//
+//        fundsContext.loan();
 
-        fundsContext.setAbstractFundsStrategy(new GansuBkFundsStrategy());
-
-        fundsContext.loan();
+        LRUCache lruCache = new LRUCache();
+        CacheContext cacheContext = new CacheContext(lruCache);
+        cacheContext.run();
     }
 
 }

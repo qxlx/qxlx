@@ -1,0 +1,14 @@
+server:
+  port: 8088
+
+#数据源连接信息
+spring:
+  datasource:
+    username: root
+    password: rootroot
+    url: jdbc:mysql://localhost:3306/mysql-learn?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      register-mbeans: true
+      maximum-pool-size: 150
+      minimum-idle: 25

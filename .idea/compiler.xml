@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring" />
         <module name="juc" />
+        <module name="jdk-learn" />
         <module name="geektime-design" />
         <module name="redis" />
         <module name="kafka" />

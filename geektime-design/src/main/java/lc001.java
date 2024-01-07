@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -40,5 +41,11 @@ public class lc001 {
 //        }
 //        return i == m && j == n; //遍历到最后了
 //    }
+
+    public int buyChoco(int[] prices, int money) {
+        int sum = Arrays.stream(prices).sorted().limit(2).sum();
+        int diff = sum - money;
+        return diff >= 0 ? diff : money;
+    }
 
 }

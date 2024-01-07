@@ -16,6 +16,8 @@
         <module>kafka</module>
         <module>redis</module>
         <module>jdk-learn</module>
+        <module>apollo-config</module>
+        <module>algo</module>
     </modules>
 
     <properties>

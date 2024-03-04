@@ -18,6 +18,7 @@
         <module>jdk-learn</module>
         <module>apollo-config</module>
         <module>algo</module>
+        <module>jvm</module>
     </modules>
 
     <properties>

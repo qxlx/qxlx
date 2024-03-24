@@ -21,4 +21,20 @@ public class LC383 {
        return true;
     }
 
+    public String pathEncryption(String path) {
+        if (path == null || path.length() == 0) {
+            return path;
+        }
+        StringBuffer sb = new StringBuffer();
+        char[] chars = path.toCharArray();
+        for (char ch : chars) {
+            if (ch == '.') {
+                sb.append(' ');
+            } else {
+                sb.append(ch);
+            }
+        }
+        return sb.toString();
+    }
+
 }

@@ -19,6 +19,7 @@
         <module>apollo-config</module>
         <module>algo</module>
         <module>jvm</module>
+        <module>min-spring</module>
     </modules>
 
     <properties>

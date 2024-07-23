@@ -13,6 +13,7 @@
         <module name="kafka" />
         <module name="juc" />
         <module name="jdk-learn" />
+        <module name="mybaits" />
         <module name="geektime-design" />
         <module name="apollo-config" />
         <module name="redis" />

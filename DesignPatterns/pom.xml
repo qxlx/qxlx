@@ -12,7 +12,15 @@
     <groupId>com.qxlx</groupId>
     <artifactId>DesignPatterns</artifactId>
     <packaging>pom</packaging>
-<!--    <modules>-->
+    <dependencies>
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.3.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+    <!--    <modules>-->
 <!--        <module>DesignPatterns</module>-->
 <!--    </modules>-->
 

@@ -20,6 +20,7 @@
         <module>algo</module>
         <module>jvm</module>
         <module>min-spring</module>
+        <module>mybaits</module>
     </modules>
 
     <properties>

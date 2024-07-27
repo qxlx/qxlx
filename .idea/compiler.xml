@@ -18,6 +18,7 @@
         <module name="apollo-config" />
         <module name="redis" />
         <module name="algo" />
+        <module name="netty-learn" />
       </profile>
     </annotationProcessing>
   </component>

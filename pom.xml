@@ -21,6 +21,7 @@
         <module>jvm</module>
         <module>min-spring</module>
         <module>mybaits</module>
+        <module>netty-learn</module>
     </modules>
 
     <properties>

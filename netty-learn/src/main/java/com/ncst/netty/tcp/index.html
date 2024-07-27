@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+Jsp部分：
+
+<!--  导入jquery的js外部文件   -->
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script>
+    $(function() {
+        //定义全局变量，这里只有一个label，所有用标签选择器
+        var lab = $("label");
+        lab.css("color", "red");
+        lab.css("font-size", "12px");
+
+        //点击任何一个input标签的button都将执行，本测试只有一个
+        $(":button").click(function() {
+            //获取指定id的第一个元素内容
+            var name = $("#userName").val();
+            //执行ajax
+            $.ajax({
+                //传输类型，这里使用Post
+                type: "Post",
+                //传输地址，这里是间接路径，测试路径在同目录下
+                url: "search",
+                //传输数据,也可以通过问号传值, 比如  url："search?name="+name
+                data: {name: name},
+                //成功执行时
+                success:function(mess) {
+                    //消息反馈为 "yes"
+                    if(mess=="yes") {
+                        //label标签赋值
+                        lab.text("该用户名已存在！");
+                    }else {
+                        lab.text("用户名可以使用！");
+                    }
+                }
+            })
+        })
+
+    })
+</script>
+
+</head>
+<body>
+
+<input type="text" id="userName" /><label></label><br/><br/>
+<input type="button" id="accept" value="验证用户名"/>
+
+</body>
+</html>

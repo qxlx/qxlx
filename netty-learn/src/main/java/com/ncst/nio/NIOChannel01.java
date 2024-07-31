@@ -17,7 +17,7 @@ public class NIOChannel01 {
     public static void main(String[] args) throws Exception {
         String str = "hi,qxlxi";
         //输出流 在d盘上写一个文件
-        FileOutputStream fileOutputStream = new FileOutputStream("d://a.txt");
+        FileOutputStream fileOutputStream = new FileOutputStream("/Users/qxlx/work/qxlx/qxlx/netty-learn/src/main/java/com/ncst/nio/a.txt");
 
         //获取输出流的通道
         FileChannel channel = fileOutputStream.getChannel();
@@ -31,6 +31,7 @@ public class NIOChannel01 {
         //刷新
         byteBuffer.flip();
 
+        //把缓冲区的内容写入到通道中
         channel.write(byteBuffer);
 
         //关闭资源

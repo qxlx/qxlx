@@ -27,12 +27,12 @@ public class NIOServer {
         //将channel注册到selector上 接收事件
         serverSocketChannel.register(selector, SelectionKey.OP_ACCEPT);
 
-        System.out.println("注册上的key:"+selector.keys().size()+" 事件发生的key:"+selector.selectedKeys().size());
+        System.out.println(""+Thread.currentThread().getName()+"  注册上的key:"+selector.keys().size()+" 事件发生的key:"+selector.selectedKeys().size());
         //循环等待客户端连接
         while (true) {
             //等待1秒中，没有 返回
             if (selector.select(1000) == 0) {
-                System.out.println("服务器等待1s,没有结果");
+                System.out.println(Thread.currentThread().getName()+ " 服务器等待1s,没有结果");
                 continue;
             }
 
@@ -54,7 +54,7 @@ public class NIOServer {
                     System.out.println("客户端连接成功。生成了一个"+socketChannel.hashCode());
                     //注册到selector 事件为读OP_READ 关联一个buffer
                     socketChannel.register(selector,SelectionKey.OP_READ, ByteBuffer.allocate(1024));
-                    System.out.println("客户端连接后key:"+selector.selectedKeys().size());
+                    System.out.println(Thread.currentThread().getName()+"客户端连接后key:"+selector.selectedKeys().size());
                 }
 
                 //读事件  OP_READ
@@ -64,7 +64,7 @@ public class NIOServer {
                     //获取到该channel关联的buffer
                     ByteBuffer byteBuffer = (ByteBuffer)selectionKey.attachment();
                     socketChannel.read(byteBuffer);
-                    System.out.println("from client :" + new String(byteBuffer.array()));
+                    System.out.println(Thread.currentThread().getName()+"from client :" + new String(byteBuffer.array()));
                 }
                 //手动删除 防止重复操作
                 selectionKeyIterator.remove();

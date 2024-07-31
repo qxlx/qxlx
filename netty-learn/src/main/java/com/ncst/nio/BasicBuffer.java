@@ -1,5 +1,6 @@
 package com.ncst.nio;
 
+import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
 
 /**
@@ -12,7 +13,7 @@ public class BasicBuffer {
     public static void main(String[] args) {
         //分配5个int字节大小空间
         IntBuffer intBuffer =  IntBuffer.allocate(5);
-
+        FloatBuffer floatBuffer = FloatBuffer.allocate(10);
         //存放数据
         for (int i = 0; i < intBuffer.capacity() ; i++) {
             intBuffer.put(2 * i );

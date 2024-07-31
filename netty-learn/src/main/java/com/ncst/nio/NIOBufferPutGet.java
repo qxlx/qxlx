@@ -19,7 +19,7 @@ public class NIOBufferPutGet {
         byteBuffer.flip();
 
         System.out.println(byteBuffer.getInt());
-        System.out.println(byteBuffer.getLong());
+        System.out.println(byteBuffer.getDouble());
     }
 
 }

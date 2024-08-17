@@ -7,16 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring" />
         <module name="jvm" />
+        <module name="wz-algo" />
         <module name="min-spring" />
+        <module name="mybaits" />
+        <module name="geektime-design" />
+        <module name="redis" />
+        <module name="spring" />
         <module name="kafka" />
         <module name="juc" />
         <module name="jdk-learn" />
-        <module name="mybaits" />
-        <module name="geektime-design" />
         <module name="apollo-config" />
-        <module name="redis" />
         <module name="algo" />
         <module name="netty-learn" />
       </profile>

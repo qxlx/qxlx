@@ -22,6 +22,7 @@
         <module>min-spring</module>
         <module>mybaits</module>
         <module>netty-learn</module>
+        <module>wz-algo</module>
     </modules>
 
     <properties>

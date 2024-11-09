@@ -1,9 +1,12 @@
 package com.qxlx.spingboot.controller;
 
+import com.qxlx.spingboot.service.ServiceImplScope;
 import com.qxlx.spingboot.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Lookup;
+import org.springframework.context.ApplicationContext;
 import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -30,6 +33,29 @@ public class HelloWorldController {
 
     @Autowired
     private UserService userService;
+    @Autowired
+    private ServiceImplScope serviceImplScope;
+    @Autowired
+    private ApplicationContext applicationContext;
+
+
+    @RequestMapping(path = "/hiScope",method = RequestMethod.GET)
+    public String hiScope() {
+        //return "hiScope"+serviceImplScope;
+//        return "hisocpe"+getServiceImplScope();
+        return "hi"+getServiceImplScopePrototype();
+    }
+
+
+
+    @Lookup
+    public ServiceImplScope getServiceImplScopePrototype() {
+        return null;
+    }
+
+    public ServiceImplScope getServiceImplScope () {
+        return applicationContext.getBean(ServiceImplScope.class);
+    }
 
     @RequestMapping(path = "/hiii", method = RequestMethod.GET)
     public String hi() {

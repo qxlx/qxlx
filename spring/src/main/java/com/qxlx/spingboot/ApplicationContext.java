@@ -1,6 +1,5 @@
 package com.qxlx.spingboot;
 
-import com.alibaba.cloud.nacos.ConditionalOnNacosDiscoveryEnabled;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @SpringBootApplication
 @RestController
-@ConditionalOnNacosDiscoveryEnabled
+//@ConditionalOnNacosDiscoveryEnabled
 public class ApplicationContext {
 
     public static void main(String[] args) {

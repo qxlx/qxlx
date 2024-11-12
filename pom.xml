@@ -23,6 +23,7 @@
         <module>mybaits</module>
         <module>netty-learn</module>
         <module>wz-algo</module>
+        <module>spring-source</module>
     </modules>
 
     <properties>

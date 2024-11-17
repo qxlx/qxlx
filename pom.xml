@@ -24,6 +24,7 @@
         <module>netty-learn</module>
         <module>wz-algo</module>
         <module>spring-source</module>
+        <module>junit-test</module>
     </modules>
 
     <properties>

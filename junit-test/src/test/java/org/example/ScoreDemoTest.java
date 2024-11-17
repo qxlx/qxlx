@@ -1,7 +1,6 @@
 package org.example;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.*;
 
 /**
  * @author qxlx
@@ -9,7 +8,28 @@ import org.junit.Test;
  */
 public class ScoreDemoTest {
 
+
     private ScoreDemo scoreDemo = new ScoreDemo();
+
+    @BeforeClass
+    public static void initBeforeClass() {
+        System.out.println("BeforeClass");
+    }
+
+    @AfterClass
+    public static void downAfterClass() {
+        System.out.println("AfterClass");
+    }
+
+    @Before
+    public void initBefore() {
+        System.out.println("before....");
+    }
+
+    @After
+    public void downAfer() {
+        System.out.println("after....");
+    }
 
     @Test
     public void scoreLevelTest() {

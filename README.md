@@ -2,9 +2,13 @@
 
 21届本，后端工程师
 语言技术栈（主力Java、熟悉Go、了解python）<br/> 
-5年后端金融业务开发经验，专注于(Mysql、Spring、dubbo、MQ) <br/> 
+5年后端金融业务开发经验，专注于(Mysql、Spring系列、Dubbo、MQ) <br/> 
 <br/>
-**dubbo应用和dubbo源码学习中** 💪<br/>
+<br/>
+<br/>
+**doing:** dubbo应用和dubbo源码 💪<br/>
+<br/>
+<br/>
 <br/>
 学习路径如下<br/>
 基础学科、编程语言、框架、中间件、软件设计、分布式系统设计、性能优化、源码解析、微服务、DDD、云原生 <br/>
